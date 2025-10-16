@@ -3,5 +3,11 @@ Description=Devopsfetch system monitoring
 After=network.target docker.service
 
 [Service]
-Type=oneshot
-ExecStart=/usr/local/bin/devopsfetch --monitor
+Type=simple
+User=ratesh
+WorkingDirectory=/opt/devopsfetch
+ExecStart=/opt/devopsfetch/venv/bin/python /opt/devopsfetch/devopsfetch.py --monitor
+StandardOutput=file:/var/log/devopsfetch/devopsfetch.log
+StandardError=file:/var/log/devopsfetch/devopsfetch.err
+Restart=always
+

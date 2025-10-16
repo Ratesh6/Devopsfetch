@@ -26,7 +26,7 @@ The project is implemented in Python and is designed to work on both **Linux** a
 - **Simplicity:** Provides an easy-to-use command-line interface for common DevOps operations.
 
 **Run this command and get the Dashboard**
--python3 -m http.server 9090
+-sudo python3 /mnt/c/Users/Lenovo/Devops_fetch/dashboard.py
 
 
 **now u can the cehck the url using this**
