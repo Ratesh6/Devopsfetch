@@ -25,4 +25,9 @@ The project is implemented in Python and is designed to work on both **Linux** a
 - **Portability:** Works across different operating systems.
 - **Simplicity:** Provides an easy-to-use command-line interface for common DevOps operations.
 
+**Run this command and get the Dashboard**
+-python3 -m http.server 9090
 
+
+**now u can the cehck the url using this**
+-http://127.0.0.1:9090
