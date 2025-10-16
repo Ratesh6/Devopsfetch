@@ -1,0 +1,7 @@
+[Unit]
+Description=Devopsfetch system monitoring
+After=network.target docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/devopsfetch --monitor

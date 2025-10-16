@@ -1,0 +1,10 @@
+[Unit]
+Description=Run devopsfetch every 1 minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=devopsfetch.service
+
+[Install]
+WantedBy=timers.target
